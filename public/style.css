@@ -1,0 +1,462 @@
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+a {
+  color: black !important;
+  text-decoration: none !important;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+/* FFA052 */
+/* **************************NAVBAR************************** */
+.navbar1 {
+  top: 0;
+  width: 100%;
+  background-color: white;
+  z-index: 1;
+
+  -webkit-box-shadow: 0px 1px 7px 0px rgba(0, 0, 0, 0.49);
+  -moz-box-shadow: 0px 1px 7px 0px rgba(0, 0, 0, 0.49);
+  box-shadow: 0px 1px 7px 0px rgba(0, 0, 0, 0.49);
+}
+.navbar1 > p {
+  color: #ffa052;
+  font-weight: bold;
+  font-size: 2rem;
+  margin: 0;
+  padding: 10px 0 10px 25px;
+}
+
+.navbar2 {
+  top: 0;
+  width: 100%;
+  background-color: white;
+  z-index: 1;
+
+  display: none;
+  -webkit-box-shadow: 0px 1px 7px 0px rgba(0, 0, 0, 0.49);
+  -moz-box-shadow: 0px 1px 7px 0px rgba(0, 0, 0, 0.49);
+  box-shadow: 0px 1px 7px 0px rgba(0, 0, 0, 0.49);
+}
+.navbar2a > p {
+  color: #ffa052;
+  font-weight: bold;
+  font-size: 2rem;
+  margin: 0;
+  padding: 10px 0 10px 10px;
+}
+@media (max-width: 990px) {
+  .navbar1 {
+    display: none;
+  }
+  .navbar2 {
+    display: block;
+  }
+}
+/* **************************MAIN PAGE************************** */
+
+.mainpage {
+  display: flex;
+}
+.mp1 {
+  flex: 2;
+  text-align: left;
+
+  height: 90vh;
+  overflow: hidden;
+  float: left;
+
+  border-right: 3px solid rgb(219, 219, 219);
+}
+.mp1 > p {
+  padding: 10px 20px;
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 600;
+}
+.mp1 > p > a {
+  display: block;
+}
+.mp1 > p:hover {
+  background-color: #ffa052;
+}
+.mp2 {
+  flex: 10;
+  /* flex-flow: column; */
+
+  height: 90vh;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  float: right;
+}
+@media (max-width: 990px) {
+  .mp1 {
+    display: none;
+  }
+}
+/* **************************MAIN PAGE************************** */
+.sections {
+  padding: 15px;
+}
+.mp2a {
+  width: 98%;
+  /* height: 250rem; */
+  padding: 10px;
+  margin: 10px;
+
+  -webkit-box-shadow: 0px 0px 19px 4px rgba(0, 0, 0, 0.44);
+  -moz-box-shadow: 0px 0px 19px 4px rgba(0, 0, 0, 0.44);
+  box-shadow: 0px 0px 19px 4px rgba(0, 0, 0, 0.44);
+}
+/* **************************USER************************** */
+#User {
+  border-bottom: 2px solid rgb(219, 219, 219);
+  padding-bottom: 60px;
+}
+.user-1 > p {
+  text-align: right;
+  font-size: 1.4rem;
+  font-weight: 650;
+  padding-right: 45px;
+  /* border-bottom: 2px solid rgb(219, 219, 219); */
+}
+.UserA {
+  display: flex;
+  justify-content: space-evenly;
+}
+.UserA1,
+.UserA2,
+.UserA3 {
+  width: 18rem;
+  /* border: 1px solid black; */
+  /* height: 25rem; */
+  /* background-color: aquamarine; */
+}
+.UserA1 > img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  min-width: 8rem;
+
+  -webkit-box-shadow: 0px 0px 7px 1px rgba(0, 0, 0, 0.44);
+  -moz-box-shadow: 0px 0px 7px 1px rgba(0, 0, 0, 0.44);
+  box-shadow: 0px 0px 7px 1px rgba(0, 0, 0, 0.44);
+}
+.UserA2 > p,
+.UserA3 > p {
+  font-size: 1.1rem;
+  margin: 5px;
+  padding: 0;
+}
+.UserA2 > p > span,
+.UserA3 > p > span {
+  color: black;
+  font-weight: 600;
+}
+@media (max-width: 800px) {
+  .user-1 > p {
+    text-align: center;
+  }
+  .UserA {
+    flex-wrap: wrap;
+  }
+  .mp2a {
+    margin: 0;
+  }
+}
+/* **************************LOAN APPLICATION************************** */
+#LoanApplication,
+#Loans,
+#Collections,
+#IOT,
+#Remarks,
+#Communications,
+#AdditionalDocs,
+#Insurance {
+  padding: 60px 0;
+  border-bottom: 2px solid rgb(219, 219, 219);
+}
+.LA1 > p,
+.L1 > p,
+.C1 > p,
+.COM1 > p,
+.IOT1 > p,
+.R1 > p,
+.COM2A1 > p,
+.ADOC1 > p,
+.I1 > p {
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  font-weight: 650;
+  color: #ffa052;
+}
+.LAA1,
+.I11,
+.LOA1 {
+  width: 23rem;
+  /* height: 20rem; */
+  border-radius: 15px;
+
+  -webkit-box-shadow: 0px 0px 7px 1px rgba(0, 0, 0, 0.44);
+  -moz-box-shadow: 0px 0px 7px 1px rgba(0, 0, 0, 0.44);
+  box-shadow: 0px 0px 7px 1px rgba(0, 0, 0, 0.44);
+}
+.LAA1A,
+.I11A,
+.LA1A {
+  background-color: #ffa052;
+  border-radius: 15px;
+}
+.LAA1A > p,
+.I11A > p,
+.LA1A > p {
+  font-size: 1.1rem;
+  color: white;
+  font-weight: 600;
+  text-align: center;
+  padding: 18px;
+  margin: 0;
+}
+.LAA1B,
+.I11B,
+.LA1B {
+  padding: 20px;
+}
+.LAA1B > p,
+.I11B > p,
+.LA1B > p {
+  font-size: 1.1rem;
+  margin: 5px;
+  padding: 0;
+}
+.appStatus {
+  background-color: rgb(255, 61, 61);
+  border-radius: 5px;
+}
+.LAA1B > p > span,
+.I11B > p > span,
+.LA1B > p > span {
+  color: black;
+  font-weight: 600;
+}
+.LAA1C,
+.LA1C {
+  text-align: center;
+}
+.LAA1C > button,
+.LA1C > button {
+  color: white;
+  background-color: #ffa052;
+  border: none;
+  border-radius: 7px;
+  margin: 15px 0;
+}
+
+.LAA1C > button:hover {
+  background-color: #ff841f;
+}
+.LA1C > button:hover {
+  background-color: #ff841f;
+}
+@media (max-width: 800px) {
+  .LA1 > p,
+  .I1 > p,
+  .L1 > p,
+  .IOT1 > p,
+  .C1 > p {
+    text-align: center;
+  }
+
+  .LAA1,
+  .I11,
+  .LOA1 {
+    width: 100%;
+  }
+}
+/* **************************COLLECTIONS************************** */
+.C2,
+.IOT2 {
+  display: flex;
+  justify-content: space-between;
+}
+.C2A,
+.C2B,
+.IOT2A,
+.IOT2B {
+  width: 20rem;
+  /* height: 20rem; */
+  /* padding: 15px; */
+}
+.C2A > p,
+.IOT2A > p {
+  font-size: 1.1rem;
+  margin: 5px;
+  padding: 0;
+}
+.C2A > p > span,
+.IOT2A > p > span {
+  color: black;
+  font-weight: 600;
+}
+.C2B,
+.IOT2B {
+  text-align: right;
+}
+.IOT2B > span > button,
+.C2B > span > button {
+  border: none;
+  color: white;
+  background-color: #ffa052;
+  font-weight: 600;
+  width: 7rem;
+  height: 2rem;
+  border-radius: 7px;
+}
+.C2B > span > button:hover {
+  background-color: #ff841f;
+}
+.IOT2B > span > button:hover {
+  background-color: #ff841f;
+}
+@media (max-width: 800px) {
+  .C2,
+  .IOT2 {
+    display: block;
+  }
+  .C2B,
+  .IOT2B {
+    text-align: left;
+  }
+}
+/* **************************INSURANCE************************** */
+.IN2 {
+  margin-top: 20px;
+}
+.spcl {
+  color: #ffa052;
+  font-weight: 650;
+}
+/* **************************REMARKS************************** */
+#Remarks > p {
+  font-size: 1.2rem;
+  font-weight: 650;
+}
+.R2 > p {
+  font-size: 1rem;
+  font-weight: 650;
+}
+.R2 > p > span {
+  font-weight: 400;
+  color: rgb(102, 101, 101);
+}
+.R2 > p:nth-child(2) {
+  font-weight: 400;
+  color: rgb(102, 101, 101);
+}
+.R3 {
+  display: flex;
+  justify-content: space-between;
+}
+.R3A,
+.R3B {
+  height: 3rem;
+}
+.R3A {
+  flex: 8;
+}
+.R3B {
+  flex: 1;
+  text-align: right;
+}
+.R3A > input {
+  width: 95%;
+  height: 2rem;
+  border: 1px solid grey;
+  border-radius: 7px;
+}
+
+.R3B > button {
+  height: 2rem;
+  width: 7rem;
+  border: none;
+  color: white;
+  background-color: #ffa052;
+  font-weight: 600;
+  border-radius: 7px;
+}
+.R3B > button:hover {
+  background-color: #ff841f;
+}
+
+@media (max-width: 800px) {
+  .R3 {
+    display: block;
+  }
+  .R3B {
+    text-align: left;
+    padding-top: 10px;
+  }
+}
+/* **************************COMMUNICATIONS************************** */
+.COM2 {
+  border: 2px solid rgb(219, 219, 219);
+  border-radius: 4px;
+}
+.COM2A {
+  display: flex;
+  justify-content: flex-start;
+  margin: 10px;
+}
+
+.COM2A1 {
+  flex: 2;
+}
+.COM2A2 {
+  flex: 8;
+}
+.COM2A1 > img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  min-width: 1rem;
+  border: 2px solid rgb(219, 219, 219);
+}
+.COM2A2 > p:nth-child(1) {
+  color: #ffa052;
+  font-size: 1rem;
+  font-weight: 500;
+}
+.COM2A2 > P {
+  color: rgb(102, 101, 101);
+}
+@media (max-width: 800px) {
+  .COM2A {
+    display: block;
+  }
+}
+/* **************************DOCS************************** */
+.ADOC2 > p {
+  font-size: 1.1rem;
+  font-weight: 800px;
+}
+.ADOC2 > span > input[type="file"]::file-selector-button {
+  border: 1px solid grey;
+  padding: 0.2em 0.4em;
+  border-radius: 7px;
+  height: 2rem;
+  width: 7rem;
+}
+.ADOC2 > span > button {
+  border: none;
+  height: 2rem;
+  width: 7rem;
+  border-radius: 7px;
+  background-color: rgb(67, 173, 67);
+  margin-top: 10px;
+}
+.ADOC2 > span > button:hover {
+  background-color: rgb(125, 211, 125);
+}
